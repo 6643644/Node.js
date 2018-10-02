@@ -4,13 +4,13 @@ var url = require('url');
 
 console.log('http server start before');
 
-function start(route){
+function start(route,handle){
 	function onRequest(request,response){
 		var pathname = url.parse(request.url).pathname;
 		
 		if(url.parse(request.url).pathname!=="/favicon.ico"){
 			console.log('Request for '+ pathname +" received");
-			route(pathname);
+			route(handle,pathname);
 		}
 
 		response.writeHead(200,{"Content-Type":"text/plain"});
