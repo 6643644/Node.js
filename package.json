@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "練習Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6643644/Node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6643644/Node.js/issues"
+  },
+  "homepage": "https://github.com/6643644/Node.js#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "superagent": "^5.1.0"
+  }
+}
